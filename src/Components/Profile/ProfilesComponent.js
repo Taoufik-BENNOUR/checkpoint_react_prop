@@ -7,8 +7,8 @@ const ProfilesComponent = ({users}) => {
   }
   return(    
     <>
-    <div style={{margin:'0 15%',display:'flex',justifyContent:'space-between'}}>
-    {users.map(user=><UserProfile user={user} handleName={handleName} />)}  
+    <div style={{margin:'50px 15%',display:'flex',justifyContent:'space-between'}}>
+    {users.map((user,i)=><UserProfile user={user} key={i} handleName={handleName} />)}  
     </div>
     </>
   
